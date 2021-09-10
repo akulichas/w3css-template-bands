@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav nav">
+            <a class="nav__link" href="#">Home</a>
+            <a class="nav__link" href="#">Band</a>
+            <a class="nav__link" href="#">Tour</a>
+            <a class="nav__link" href="#">Contact</a>
+            <a class="nav__link" href="#">More</a>
+        </nav>
+        <button class="search">
+            <img class="search__icon" src="loupe.svg" alt="search">
+        </button>
+    </header>
+
+    <section class="section section-slider" id="screen1">
+        <img class="background" src="chicago.jpg" alt="Фон">
+        <div class="section-slider__caption">
+            <h1 class="section-slider__title">Chicago</h1>
+            <h2 class="section-slider__description"><strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</strong></h2>
+        </div>
+    </section>
+
+    <section class="section section--light">
+        <div class="wrapper">
+            <h1 class="title">The Band</h1>
+            <h2 class="subtitle">We love music</h2>
+            <p class="text-align-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore minima a consequatur autem quis deleniti eos tenetur quod quasi dolor ut temporibus voluptas cum porro, facere architecto distinctio omnis id corrupti, expedita aliquid. Delectus obcaecati est ab vero! Asperiores, ea. Minus eaque assumenda pariatur atque id dolores laborum, consectetur aut.</p>
+            <div class="cards" id="cards-bandmembers">
+                <div class="card">
+                    <h5 class="card__title">Name</h5>
+                    <img class="card__img" src="bandmember.jpg" alt="Участник группы">
+                </div>
+                <div class="card">
+                    <h5 class="card__title">Name</h5>
+                    <img class="card__img" src="bandmember.jpg" alt="Участник группы">
+                </div>
+                <div class="card">
+                    <h5 class="card__title">Name</h5>
+                    <img class="card__img" src="bandmember.jpg" alt="Участник группы">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="wrapper">
+            <h1 class="title">Tour Dates</h1>
+            <h2 class="subtitle">Remember to book your tickets!</h2>
+            <div class="timetable timetable--margin-top">
+                <div class="timetable__event">
+                    <div class="timetable__date">September</div>
+                    <div class="timetable__info">
+                        <div class="tag tag--warning">Sold out</div>
+                    </div>
+                </div>
+                <div class="timetable__event">
+                    <div class="timetable__date">October</div>
+                    <div class="timetable__info">
+                        <div class="tag tag--warning">Sold out</div>
+                    </div>
+                </div>
+                <div class="timetable__event">
+                    <div class="timetable__date">November</div>
+                    <div class="timetable__info">
+                        <div class="tag tag--circle">3</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards" id="cards-tickets">
+                <div class="card card--light card--align-left">
+                    <img class="card__img" src="New York.jpg" alt="Нью-Йорк">
+                    <div class="card__content">
+                        <h5 class="card__title card__title--bold">New York</h5>
+                        <div class="card__subtitle">Fri 25 Nov 2016</div>
+                        <div class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                        <a href="#" class="btn">Buy Tickets</a>
+                    </div>
+                </div>
+                <div class="card card--light card--align-left">
+                    <img class="card__img" src="New York.jpg" alt="Нью-Йорк">
+                    <div class="card__content">
+                        <h5 class="card__title card__title--bold">New York</h5>
+                        <div class="card__subtitle">Fri 25 Nov 2016</div>
+                        <div class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                        <a href="#" class="btn">Buy Tickets</a>
+                    </div>
+                </div>
+                <div class="card card--light card--align-left">
+                    <img class="card__img" src="New York.jpg" alt="Нью-Йорк">
+                    <div class="card__content">
+                        <h5 class="card__title card__title--bold">New York</h5>
+                        <div class="card__subtitle">Fri 25 Nov 2016</div>
+                        <div class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                        <a href="#" class="btn">Buy Tickets</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section--light" id="contact">
+        <div class="wrapper">
+            <h1 class="title">Contact</h1>
+            <h2 class="subtitle">Fan? Drop a note!</h2>
+            <div class="section__inner">
+                <div class="contacts">
+                    <div class="contacts__element">
+                        <img src="pin.svg" class="contacts__icon">
+                        <div>Chicago, US</div>
+                    </div>
+                    <div class="contacts__element">
+                        <img src="phone.svg" class="contacts__icon">
+                        <div>Phone: +00 151515</div>
+                    </div>
+                    <div class="contacts__element">
+                        <img src="email.svg" class="contacts__icon">
+                        <div>mail@mail.com</div>
+                    </div>
+                </div>
+                <form action="#" method="POST" class="form">
+                    <input type="text" name="name" placeholder="Name" class="input input--half">
+                    <input type="email" name="email" placeholder="Email" class="input input--half">
+                    <textarea name="message" placeholder="Message" class="input textarea"></textarea>
+                    <input type="submit" value="SEND" class="btn btn--submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <img src="map.jpg" alt="map of Chicago" class="map__img">
+        <div class="map__square"></div>
+    </section>
+    <footer class="section section--light footer">
+        <div class="footer-contacts">
+            <a href="#" class="footer__link"><img src="facebook.png" alt="Facebook icon link" class="footer__icon"></a>
+            <a href="#" class="footer__link"><img src="instagram.png" alt="Instagram icon link" class="footer__icon"></a>
+            <a href="#" class="footer__link"><img src="snapchat.png" alt="Snapchat icon link" class="footer__icon"></a>
+            <a href="#" class="footer__link"><img src="pinterest.png" alt="Pinterest icon link" class="footer__icon"></a>
+            <a href="#" class="footer__link"><img src="twitter.png" alt="Twitter icon link" class="footer__icon"></a>
+            <a href="#" class="footer__link"><img src="linkedin.png" alt="Linkedin icon link" class="footer__icon"></a>
+        </div>
+        <div class="footer__author">Powered by&nbsp;<u>w3.css</u></div>
+    </footer>
+</body>
+</html>
